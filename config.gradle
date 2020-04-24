@@ -1,0 +1,72 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
+            applicationId    : "com.codetroupes.mvvmsimaple",
+            minSdkVersion    : 14,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+    //version配置
+    versions = [
+            "support-version": "29.0.2",
+            "junit-version"  : "4.12",
+            "appcompat-version" : "1.1.0",
+            "recyclerview-version" : "1.1.0",
+            "constraintlayout-version" : "1.1.3",
+    ]
+    //support配置
+    support = [
+            'support-v4'              : "com.android.support:support-v4:${versions["support-version"]}",
+            'constraintlayout'        : "androidx.constraintlayout:constraintlayout:${versions["constraintlayout-version"]}",
+            'cardview'                : "androidx.cardview:cardview:1.0.0",
+            'appcompat'               : "androidx.appcompat:appcompat:${versions["appcompat-version"]}",
+            'recyclerview'            : "androidx.recyclerview:recyclerview:${versions["recyclerview-version"]}",
+            'support-v13'             : "com.android.support:support-v13:${versions["support-version"]}",
+            'support-fragment'        : "com.android.support:support-fragment:${versions["support-version"]}",
+            'design'                  : "com.android.support:design:${versions["support-version"]}",
+            'animated-vector-drawable': "com.android.support:animated-vector-drawable:${versions["support-version"]}",
+            'junit'                   : "junit:junit:${versions["junit-version"]}",
+    ]
+    //依赖第三方配置
+    dependencies = [
+
+            //阿里路由框架
+            "arouter-api"                          : "com.alibaba:arouter-api:1.5.0",
+            "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.2.2",
+            //rxjava
+            "rxjava"                               : "io.reactivex.rxjava3:rxjava:3.0.2",
+            "rxandroid"                            : "io.reactivex.rxjava3:rxandroid:3.0.0",
+            //rx系列与View生命周期同步
+            "rxlifecycle"                          : "com.trello.rxlifecycle3:rxlifecycle:3.1.0",
+            "rxlifecycle-components"               : "com.trello.rxlifecycle3:rxlifecycle-components:3.1.0",
+            //rxbinding
+            "rxbinding"                            : "com.jakewharton.rxbinding3:rxbinding:3.1.0",
+            //rx 6.0权限请求
+            "rxpermissions"                        : "com.github.tbruyelle:rxpermissions:0.10.2",
+            //network
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:4.5.0",
+            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.8.1",
+            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.8.1",
+            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava2:2.8.1",
+            //glide图片加载
+            "glide"                                : "com.github.bumptech.glide:glide:4.11.0",
+            "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.11.0",
+            //json解析
+            "gson"                                 : "com.google.code.gson:gson:2.8.6",
+            //material-dialogs
+            "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.4.5",
+            "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.4.5",
+            //recyclerview的databinding套装
+            "bindingcollectionadapter"             : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:4.0.0",
+            "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:4.0.0",
+            "bindingcollectionadapter-viewpager2"  : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-viewpager2:4.0.0",
+            //Google AAC
+            "lifecycle-extensions"                 : "android.arch.lifecycle:extensions:1.1.1",
+            "lifecycle-compiler"                   : "android.arch.lifecycle:compiler:1.1.1",
+    ]
+}
+
+
